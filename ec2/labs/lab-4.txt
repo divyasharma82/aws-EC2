@@ -1,0 +1,48 @@
+# Lab 4: Creating a Linux Server in AWS and Connecting with PuTTY
+
+In this lab, you will learn how to create a Linux server instance on Amazon Elastic Compute Cloud (EC2) and connect to it using PuTTY and PuTTYgen on a Windows machine.
+
+## Prerequisites
+- An AWS account with appropriate permissions.
+- PuTTY and PuTTYgen installed on your Windows machine.
+
+## Step 1: Sign in to the AWS Management Console
+
+[Follow the steps mentioned in the previous lab.]
+
+## Step 2: Launch a Linux Instance
+
+[Follow the steps mentioned in the previous lab.]
+
+## Step 3: Connect to Your Linux Server Using PuTTY and PuTTYgen
+
+3.1. Download and install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) and [PuTTYgen](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) if you haven't already.
+
+3.2. Launch PuTTYgen and click on the "Load" button.
+
+3.3. In the "Load Private Key" dialog, browse to and select the private key (.pem) file you downloaded when creating your EC2 instance.
+
+3.4. Click "Open" to load the key. PuTTYgen may convert it to a different format (e.g., .ppk).
+
+3.5. Click the "Save private key" button and save the private key with a .ppk extension (e.g., `your-key.ppk`).
+
+3.6. Launch PuTTY.
+
+3.7. In the "Session" category on the left, enter the public IP address or DNS name of your Linux instance in the "Host Name (or IP address)" field.
+
+3.8. In the "Connection" category, expand the "SSH" section and click on "Auth."
+
+3.9. In the "Private key file for authentication" field, browse and select the .ppk private key file you saved earlier.
+
+3.10. Go back to the "Session" category, enter a name for your session in the "Saved Sessions" field, and click the "Save" button to save your session settings for future use.
+
+3.11. Click the "Open" button to initiate the SSH connection.
+
+3.12. PuTTY will prompt you for the username. For Amazon Linux and CentOS instances, use `ec2-user`. For Ubuntu instances, use `ubuntu`.
+
+3.13. You are now connected to your Linux server using PuTTY and PuTTYgen on your Windows machine.
+
+## Conclusion
+You have successfully created a Linux server instance on AWS EC2 and connected to it using PuTTY and PuTTYgen on your Windows machine.
+
+For more information on PuTTY and PuTTYgen, refer to the [PuTTY Documentation](https://www.chiark.greenend.org.uk/~sgtatham/putty/).
