@@ -1,0 +1,22 @@
+## Lab 5: Retrieving Metadata of a Linux EC2 Instance
+
+In this lab, you will learn how to retrieve instance metadata of a Linux EC2 instance using the command line. Instance metadata provides valuable information about the instance, such as its ID, public IP address, and more.
+
+### Prerequisites
+- An AWS account with a running Linux EC2 instance.
+
+### Steps
+
+1. **SSH into Your Linux EC2 Instance**: Connect to your Linux EC2 instance using SSH.
+
+2. **Retrieve Instance Metadata**:
+
+   To retrieve instance metadata, use the following `curl` command:
+
+   ```bash
+   curl http://169.254.169.254/latest/meta-data/
+
+curl http://169.254.169.254/latest/meta-data/instance-id
+
+curl http://169.254.169.254/latest/meta-data/public-ipv4
+
