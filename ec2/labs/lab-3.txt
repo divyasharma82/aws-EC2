@@ -1,0 +1,65 @@
+# Lab 3: Attaching an Extra EBS Volume to an EC2 Instance
+
+In this lab, you will learn how to attach an additional Elastic Block Store (EBS) volume to an Amazon Elastic Compute Cloud (EC2) instance using the AWS Management Console. We'll use an example of attaching a 55GB EBS volume to your EC2 instance.
+
+## Prerequisites
+- An AWS account with appropriate permissions.
+- An existing EC2 instance that you want to attach the EBS volume to (follow Lab 1 instructions if needed).
+
+## Step 1: Sign in to the AWS Management Console
+
+1.1. Open a web browser and go to the [AWS Management Console](https://aws.amazon.com/console/).
+
+1.2. Sign in to your AWS account if you're not already logged in.
+
+## Step 2: Navigate to EC2 Dashboard
+
+2.1. In the AWS Management Console, click on **Services** and select **EC2** under the "Compute" section.
+
+## Step 3: Identify Your EC2 Instance
+
+3.1. In the EC2 dashboard, click on **Instances** in the left navigation pane.
+
+3.2. Locate and select the EC2 instance to which you want to attach the EBS volume.
+
+## Step 4: Attach an EBS Volume
+
+4.1. With your EC2 instance selected, scroll down to the "Description" tab in the lower panel.
+
+4.2. In the "Block devices" section, you will see the current attached volumes, such as the root volume (e.g., `/dev/sda1`).
+
+4.3. Click on the "Volumes" link in the "Block devices" section.
+
+4.4. In the "Volumes" dashboard, click the "Create Volume" button.
+
+4.5. In the "Create Volume" dialog:
+   - Specify the size of the volume (e.g., 55GB).
+   - Select the desired volume type (e.g., General Purpose SSD).
+   - You can leave other settings as default unless you have specific requirements.
+
+4.6. Click the "Create" button to create the new EBS volume.
+
+## Step 5: Attach the EBS Volume to Your EC2 Instance
+
+5.1. After creating the EBS volume, go back to the "Volumes" dashboard.
+
+5.2. Select the newly created volume.
+
+5.3. Click the "Actions" button and choose "Attach Volume."
+
+5.4. In the "Attach Volume" dialog, select the EC2 instance to which you want to attach the volume.
+
+5.5. Specify the device name (e.g., `/dev/xvdf`) for the attached volume.
+
+5.6. Click the "Attach" button to attach the volume to your EC2 instance.
+
+## Step 6: Connect to Your EC2 Instance
+
+6.1. Connect to your EC2 instance using RDP (for Windows) or SSH (for Linux) as you did in Lab 1.
+
+6.2. Once connected, you may need to initialize and format the new volume depending on your operating system.
+
+## Conclusion
+You have successfully attached an extra 55GB EBS volume to your EC2 instance using the AWS Management Console. You can now use this additional storage for your applications, data, or as needed.
+
+For more information on EBS volumes and their management, refer to the [AWS EBS Documentation](https://docs.aws.amazon.com/ebs/).
