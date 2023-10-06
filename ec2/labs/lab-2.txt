@@ -1,0 +1,116 @@
+# Lab 2: Installing IIS Web Server and Creating Web Pages on Windows Server
+
+In this lab, you will learn how to install and configure the Internet Information Services (IIS) web server on a Windows Server instance hosted on Amazon Elastic Compute Cloud (EC2). Additionally, you will create and host a simple webpage on your IIS server.
+
+## Prerequisites
+- An AWS account with appropriate permissions.
+- An EC2 instance with Windows Server installed (follow Lab 1 instructions if you haven't set up an instance yet).
+- AWS CLI installed and configured with access keys.
+
+## Step 1: Install IIS (Internet Information Services)
+
+1.1. Connect to your Windows Server instance using Remote Desktop Protocol (RDP).
+
+1.2. Open **Server Manager** (you can find it in the taskbar or search for it in the Start menu).
+
+1.3. In Server Manager, click on **Manage** in the top-right corner and select **Add Roles and Features**.
+
+1.4. Click **Next** until you reach the **Roles** section.
+
+1.5. In the Roles section, select **Web Server (IIS)**.
+
+1.6. Click **Next** through the rest of the wizard, then click **Install** to begin the IIS installation.
+
+1.7. Wait for the installation to complete, and then click **Close**.
+
+## Step 2: Create a Simple Web Page
+
+2.1. Open **File Explorer** on your Windows Server.
+
+2.2. Navigate to the following directory:
+
+
+2.3. In the `wwwroot` directory, create a new folder for your website (e.g., `my-website`).
+
+2.4. Inside the website folder, create an HTML file (e.g., `index.html`) using a text editor like Notepad.
+
+2.5. Add some content to your `index.html` file. For example:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My AWS EC2 Website</title>
+</head>
+<body>
+    <h1>Welcome to my website hosted on AWS EC2!</h1>
+    <p>This is a simple webpage created on my Windows Server.</p>
+</body>
+</html>
+
+2 / 2
+
+Certainly! Here's a detailed set of instructions for Lab 2: Installing IIS Web Server and Creating Web Pages on a Windows Server in AWS. You can use this as content for your GitHub repository's README.md file:
+
+markdown
+Copy code
+# Lab 2: Installing IIS Web Server and Creating Web Pages on Windows Server
+
+In this lab, you will learn how to install and configure the Internet Information Services (IIS) web server on a Windows Server instance hosted on Amazon Elastic Compute Cloud (EC2). Additionally, you will create and host a simple webpage on your IIS server.
+
+## Prerequisites
+- An AWS account with appropriate permissions.
+- An EC2 instance with Windows Server installed (follow Lab 1 instructions if you haven't set up an instance yet).
+- AWS CLI installed and configured with access keys.
+
+## Step 1: Install IIS (Internet Information Services)
+
+1.1. Connect to your Windows Server instance using Remote Desktop Protocol (RDP).
+
+1.2. Open **Server Manager** (you can find it in the taskbar or search for it in the Start menu).
+
+1.3. In Server Manager, click on **Manage** in the top-right corner and select **Add Roles and Features**.
+
+1.4. Click **Next** until you reach the **Roles** section.
+
+1.5. In the Roles section, select **Web Server (IIS)**.
+
+1.6. Click **Next** through the rest of the wizard, then click **Install** to begin the IIS installation.
+
+1.7. Wait for the installation to complete, and then click **Close**.
+
+## Step 2: Create a Simple Web Page
+
+2.1. Open **File Explorer** on your Windows Server.
+
+2.2. Navigate to the following directory:
+C:\inetpub\wwwroot
+
+php
+Copy code
+
+2.3. In the `wwwroot` directory, create a new folder for your website (e.g., `my-website`).
+
+2.4. Inside the website folder, create an HTML file (e.g., `index.html`) using a text editor like Notepad.
+
+2.5. Add some content to your `index.html` file. For example:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My AWS EC2 Website</title>
+</head>
+<body>
+    <h1>Welcome to my website hosted on AWS EC2!</h1>
+    <p>This is a simple webpage created on my Windows Server.</p>
+</body>
+</html>
+2.6. Save the index.html file.
+
+Step 3: Access Your Webpage
+3.1. Go back to your AWS EC2 Management Console.
+
+3.2. Locate the public IP address of your Windows Server instance.
+
+3.3. Open a web browser and enter the public IP address in the address bar.
+
+3.4. You should now see your simple webpage hosted on your Windows Server through IIS.
