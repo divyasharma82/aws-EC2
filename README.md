@@ -1,7 +1,7 @@
 # My EC2 Learning Journey 🚀
 
 ## Overview
-This repository documents my journey to learn and master Amazon Elastic Compute Cloud (EC2) instances on AWS. Here, I share my documentation, scripts, and projects as I explore EC2 and cloud computing.
+This repository documents my journey to learn  Amazon Elastic Compute Cloud (EC2) instances on AWS. Here, I share my documentation, scripts, and projects as I explore EC2 and cloud computing.
 
 ## Table of Contents
 1. [Amazon EC2 Overview](#amazon-ec2-overview)
